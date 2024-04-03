@@ -27,7 +27,7 @@ pipeline {
     steps {
         script {
             // Push Docker image to Docker Hub
-            docker.withRegistry('https://index.docker.io/v1/', 'docker-hub-credentials') {
+            docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') {
                 docker.image("eli7890/app").push()
             }
         }
