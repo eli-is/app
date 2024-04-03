@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
               // Download code from Git
-        git branch: 'main', credentialsId: 'your-git-credentials', url: 'https://github.com/your-repo/your-dotnet-core-app.git'
+        git branch: 'main', credentialsId: 'github', url: 'https://github.com/eli-is/app.git'
             }
         }
         
