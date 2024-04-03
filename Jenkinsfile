@@ -1,10 +1,6 @@
 pipeline {
     agent { label 'any' }
   
-    tools {
-        dotnetcore 'dotnet-sdk-8' //  you need a dotnet core tool installation defined in Jenkins
-    }
-  
     environment {
         APP_NAME = "app"
         RELEASE = "1.0.0"
