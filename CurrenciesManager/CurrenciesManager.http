@@ -1,0 +1,6 @@
+@CurrenciesManager_HostAddress = http://localhost:5074
+
+GET {{CurrenciesManager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

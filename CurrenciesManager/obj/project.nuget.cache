@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Gh4YtPxKYBPAWKacBhEw5oOglS18VmXOCUfeFzgXqddEq79S+pIdQ1boGsc/Odn9odkOf+ZwAIeFUpr6OLdrZw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yossin\\source\\repos\\Currencies\\CurrenciesManager\\BooksManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yossin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\yossin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\yossin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\yossin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\yossin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\yossin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
