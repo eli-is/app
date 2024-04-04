@@ -19,7 +19,7 @@ pipeline {
                 script {
                     // Build Docker image
                      //docker.build("eli7890/app")
-                      docker.build('eli7890/book-management:${env.BUILD_NUMBER}', '${WORKSPACE}')
+                      docker.build('eli7890/book-management:5', '${WORKSPACE}')
     
                  //  sh """
                     //   docker build -t eli7890/book-management:${env.BUILD_NUMBER} ${WORKSPACE}
