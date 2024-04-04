@@ -21,7 +21,7 @@ pipeline {
                     // docker.build("eli7890/app")
     
                     sh """
-                        docker build -t eli7890/book-management:${env.BUILD_NUMBER}
+                        docker build -t eli7890/book-management:${env.BUILD_NUMBER} .
                         docker tag eli7890/book-management:${env.BUILD_NUMBER} eli7890/book-management:latest
                     """
                     
