@@ -22,5 +22,5 @@ COPY --from=build /app/out ./
 # Expose port 8081
 EXPOSE 8081
 
-ENTRYPOINT ["dotnet", "hello-world-dotnet.dll"]
+ENTRYPOINT ["dotnet", "BookManagement.dll"]
 
