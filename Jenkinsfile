@@ -18,12 +18,13 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    // docker.build("eli7890/app")
+                     //docker.build("eli7890/app")
+                      docker.build('eli7890/book-management:${env.BUILD_NUMBER}', '${WORKSPACE}')
     
-                   sh """
-                       docker build -t eli7890/book-management:${env.BUILD_NUMBER} ${WORKSPACE}
-                      docker tag eli7890/book-management:${env.BUILD_NUMBER} eli7890/book-management:latest
-                   """
+                 //  sh """
+                    //   docker build -t eli7890/book-management:${env.BUILD_NUMBER} ${WORKSPACE}
+                  //    docker tag eli7890/book-management:${env.BUILD_NUMBER} eli7890/book-management:latest
+                 //  """
                     
                 }
             }
