@@ -1,0 +1,36 @@
+cat <<'EOF' | kubectl apply -f -
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jenkins
+  template:
+    metadata:
+      labels:
+        app: jenkins
+    spec:
+      containers:
+      - name: jenkins
+        image: jenkins/jenkins
+        securityContext:
+          privileged: true
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+          - mountPath: /var/run/docker.sock
+            name: docker-sock-volume
+          - mountPath: /usr/bin/docker
+            name: docker-bin-volume
+      volumes:
+        - name: docker-sock-volume
+          hostPath:
+            path: /var/run/docker.sock
+        - name: docker-bin-volume
+          hostPath:
+            path: /usr/bin/docker
+            type: File
+EOF
